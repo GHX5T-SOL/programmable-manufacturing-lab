@@ -1,3 +1,5 @@
+"""Synthetic machine-degradation environment with cumulative tool wear."""
+
 from __future__ import annotations
 
 import numpy as np
@@ -8,6 +10,9 @@ from imwm.physics import clip01
 
 class ToolWearEnvironment:
     """Synthetic tool-wear environment for testing maintenance-aware decisions.
+
+    This environment models cumulative tool degradation, thermal load, and
+    defect-risk growth rather than another static process-window search.
 
     State dimensions:
     0. wear_level

@@ -69,6 +69,17 @@ Recommended physical action: {'laser_power': ..., 'scan_speed': ...}
 Saved plot: examples/process_window_recommendation.png
 ```
 
+## Run the tool-wear environment
+
+```bash
+python examples/run_tool_wear.py
+```
+
+This example is a machine-degradation scenario: repeated actions increase
+tool wear and thermal load, which raises defect risk and lowers surface
+quality over time. It is intentionally separate from the static process-window
+search demo.
+
 ## Project structure
 
 ```text
